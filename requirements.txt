@@ -3,4 +3,4 @@ streamlit
 tensorflow
 numpy
 streamlit_drawable_canvas
-protobuf
+protobuf==3.20.0
