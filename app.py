@@ -82,7 +82,7 @@ if input_type == "Upload Image":
             col1.bar_chart(prediction.flatten())
 
             # Display the input image for reference
-            col1.image(image_array[0, :, :, 0], caption="Input Image", use_column_width=True, cmap="gray")
+            col1.image(image_array[0, :, :, 0], caption="Input Image", use_column_width=True, channels="GRAY")
 
 elif input_type == "Draw Digit":
     # Create a canvas for drawing
@@ -109,7 +109,7 @@ elif input_type == "Draw Digit":
             col1.bar_chart(prediction.flatten())
 
             # Display the input image for reference
-            col1.image(drawn_image_array[0, :, :, 0], caption="Input Image", use_column_width=True, cmap="gray")
+            col1.image(drawn_image_array[0, :, :, 0], caption="Input Image", use_column_width=True, channels="GRAY")
 
 # Instructions and model summary
 st.sidebar.header("How to Use")
